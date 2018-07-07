@@ -1,0 +1,131 @@
+.background {
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    position: absolute;
+    height: 95%;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    min-height: 620px;
+    min-width: 800px;
+}
+
+.vectors{
+    position: absolute;
+    height: 30%;
+    width: 30%;
+    top: 40%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    min-height: 240px;
+    min-width: 230px;
+}
+
+.map {
+    transform-origin: 0% 90%;
+}
+
+.first-map {
+    fill: rgba(175, 30, 61, 1);
+}
+
+.second-map {
+    fill: rgba(175, 30, 61, 0.6);
+    -webkit-animation: rotate2 0.5s 1 linear forwards;
+    -moz-animation: rotate2 0.5s 1 linear forwards;
+    -o-animation: rotate2 0.5s 1 linear forwards;
+    animation: rotate2 0.5s 1 linear forwards;
+    z-index:10;
+}
+
+@-webkit-keyframes rotate2 {100% { -webkit-transform: rotate(-37deg);}}
+@-moz-keyframes rotate2 {100% { -moz-transform: rotate(-37deg);}}
+@keyframes rotate2 {100% { -webkit-transform: rotate(-37deg); -transform: rotate(-37deg);}}
+
+.third-map {
+    fill: rgba(175, 30, 61, 0.6);
+    -webkit-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards;
+    -webkit-animation-delay: 0s, 0.5s;
+    -moz-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards;
+    -moz-animation-delay: 0s, 0.5s;
+    -o-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards;
+    -o-animation-delay: 0s, 0.5s;
+    animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards;
+    animation-delay: 0s, 0.5s;
+    z-index:15;
+}
+
+@-webkit-keyframes rotate3 {0%{ -webkit-transform: rotate(-37deg);} 100% { -webkit-transform: rotate(-74deg);}}
+@-moz-keyframes rotate3 {0% { -moz-transform: rotate(-37deg);} 100% { -moz-transform: rotate(-74deg);}}
+@keyframes rotate3 {0% { -webkit-transform: rotate(-37deg); transform: rotate(-37deg); } 100% { transform: rotate(-74deg); -webkit-transform: rotate(-74deg);}}
+
+.fourth-map {
+    fill: rgba(175, 30, 61, 0.6);
+    -webkit-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards;
+    -webkit-animation-delay: 0s, 0.5s, 1.0s;
+    -moz-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards;
+    -moz-animation-delay: 0s, 0.5s, 1.0s;
+    -o-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards;
+    -o-animation-delay: 0s, 0.5s, 1.0s;
+    animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards;
+    animation-delay: 0s, 0.5s, 1.0s;
+    z-index:20;
+}
+
+@-webkit-keyframes rotate4 {0%{ -webkit-transform: rotate(-74deg);} 100% { -webkit-transform: rotate(-111deg);}}
+@-moz-keyframes rotate4 {0% { -moz-transform: rotate(-74deg);} 100% { -moz-transform: rotate(-111deg);}}
+@keyframes rotate4 {0% { -webkit-transform: rotate(-74deg); transform: rotate(-74deg); } 100% { transform: rotate(-111deg); -webkit-transform: rotate(-111deg);}}
+
+.fifth-map {
+    fill: rgba(175, 30, 61, 0.6);
+    -webkit-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards;
+    -webkit-animation-delay: 0s, 0.5s, 1.0s, 1.5s;
+    -moz-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards;
+    -moz-animation-delay: 0s, 0.5s, 1.0s, 1.5s;
+    -o-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards;
+    -o-animation-delay: 0s, 0.5s, 1.0s, 1.5s;
+    animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards;
+    animation-delay: 0s, 0.5s, 1.0s, 1.5s;
+    z-index:25;
+}
+
+@-webkit-keyframes rotate5 {0%{ -webkit-transform: rotate(-111deg);} 100% { -webkit-transform: rotate(-148deg);}}
+@-moz-keyframes rotate5 {0% { -moz-transform: rotate(-111deg);} 100% { -moz-transform: rotate(-148deg);}}
+@keyframes rotate5 {0% { -webkit-transform: rotate(-111deg); transform: rotate(-111deg); } 100% { transform: rotate(-148deg); -webkit-transform: rotate(-148deg);}}
+
+.sixth-map {
+    fill: rgba(175, 30, 61, 0.6);
+    -webkit-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards, rotate6 0.5s 1 linear forwards;
+    -webkit-animation-delay: 0s, 0.5s, 1.0s, 1.5s, 2.0s;
+    -moz-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards, rotate6 0.5s 1 linear forwards;
+    -moz-animation-delay: 0s, 0.5s, 1.0s, 1.5s, 2.0s;
+    -o-animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards, rotate6 0.5s 1 linear forwards;
+    -o-animation-delay: 0s, 0.5s, 1.0s, 1.5s, 2.0s;
+    animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards, rotate6 0.5s 1 linear forwards;
+    animation-delay: 0s, 0.5s, 1.0s, 1.5s, 2.0s;
+    z-index:30;
+}
+
+@-webkit-keyframes rotate6 {0%{ -webkit-transform: rotate(-148deg);} 100% { -webkit-transform: rotate(-185deg);}}
+@-moz-keyframes rotate6 {0% { -moz-transform: rotate(-148deg);} 100% { -moz-transform: rotate(-185deg);}}
+@keyframes rotate6 {0% { -webkit-transform: rotate(-148deg); transform: rotate(-148deg); } 100% { transform: rotate(-185deg); -webkit-transform: rotate(-185deg);}}
+
+svg {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    min-height: 240px;
+    min-width: 230px;
+    max-width: 300px;
+}

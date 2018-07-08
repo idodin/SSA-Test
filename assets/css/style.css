@@ -47,6 +47,7 @@
     -o-animation-delay: 5.0s;
     animation: burst1 1.0s 1 linear forwards;
     animation-delay: 5.0s;
+    z-index: 30;
 }
 
 @-webkit-keyframes burst1 {0%,100% { fill: rgba(175, 30, 61, 0.8);} 50%{fill: rgba(175, 30, 61, 1.0)}}
@@ -60,7 +61,7 @@
     -moz-animation: rotate2 0.5s 1 linear forwards, burst2 1.0s 1 linear forwards;
     -o-animation: rotate2 0.5s 1 linear forwards, burst2 1.0s 1 linear forwards;
     animation: rotate2 0.5s 1 linear forwards, burst2 1.0s 1 linear forwards;
-    z-index:10;
+    z-index: 25;
 }
 
 @-webkit-keyframes rotate2 {100% { -webkit-transform: rotate(-42deg);}}
@@ -83,7 +84,7 @@
     -o-animation-delay: 0s, 0.5s, 5.0s;
     animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, burst3 1.0s 1 linear forwards;
     animation-delay: 0s, 0.5s, 5.0s;
-    z-index:15;
+    z-index: 20;
 }
 
 @-webkit-keyframes rotate3 {0%{ -webkit-transform: rotate(-42deg);} 100% { -webkit-transform: rotate(-84deg);}}
@@ -106,8 +107,9 @@
     -o-animation-delay: 0s, 0.5s, 1.0s, 5.0s;
     animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, burst4 1.0s 1 linear forwards;
     animation-delay: 0s, 0.5s, 1.0s, 5.0s;
-    z-index:20;
+    z-index: 15;
 }
+
 
 @-webkit-keyframes rotate4 {0%{ -webkit-transform: rotate(-84deg);} 100% { -webkit-transform: rotate(-126deg);}}
 @-moz-keyframes rotate4 {0% { -moz-transform: rotate(-84deg);} 100% { -moz-transform: rotate(-126deg);}}
@@ -129,7 +131,7 @@
     -o-animation-delay: 0s, 0.5s, 1.0s, 1.5s, 5.0s;
     animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards, burst5 1.0s 1 linear forwards;
     animation-delay: 0s, 0.5s, 1.0s, 1.5s, 5.0s;
-    z-index:25;
+    z-index: 10;
 }
 
 @-webkit-keyframes rotate5 {0%{ -webkit-transform: rotate(-126deg);} 100% { -webkit-transform: rotate(-168deg);}}
@@ -152,7 +154,7 @@
     -o-animation-delay: 0s, 0.5s, 1.0s, 1.5s, 2.0s, 5.0s;
     animation: rotate2 0.5s 1 linear forwards, rotate3 0.5s 1 linear forwards, rotate4 0.5s 1 linear forwards, rotate5 0.5s 1 linear forwards, rotate6 0.5s 1 linear forwards, burst6 1.0s 1 linear forwards;
     animation-delay: 0s, 0.5s, 1.0s, 1.5s, 2.0s, 5.0s;
-    z-index:30;
+    z-index: 5;
 }
 
 @-webkit-keyframes rotate6 {0%{ -webkit-transform: rotate(-168deg);} 100% { -webkit-transform: rotate(-210deg);}}
@@ -173,11 +175,28 @@
     line-height: 40px;
     position: absolute;
     top: 70%;
-    left: 150px;
+    left: 130px;
+    -webkit-animation: burst7 1.0s 1 linear forwards;
+    -webkit-animation-delay: 5.0s;
+    -moz-animation: burst7 1.0s 1 linear forwards;
+    -moz-animation-delay: 5.0s;
+    -o-animation: burst7 1.0s 1 linear forwards;
+    -o-animation-delay: 5.0s;
+    animation: burst7 1.0s 1 linear forwards;
+    animation-delay: 5.0s;
 }
+
+@-webkit-keyframes burst7 {0%,100%{ color: rgba(255, 255, 255, 0.7);} 50% { color: rgba(255, 255, 255, 0.9);}}
+@-moz-keyframes burst7 {0%,100% { color: rgba(255, 255, 255, 0.7);} 50% { color: rgba(255, 255, 255, 0.9);}}
+@-o-keyframes burst7 {0%,100%{ color: rgba(255, 255, 255, 0.7);;} 50% { color: rgba(255, 255, 255, 0.9);;}}
+@keyframes burst7 {0%,100%{ color: rgba(255, 255, 255, 0.7); } 50% { color: rgba(255, 255, 255, 0.9);}}
 
 svg {
     position: absolute;
     width: auto;
     height: 80%;
+}
+
+svg path{
+    pointer-events: none;
 }

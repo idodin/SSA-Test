@@ -156,20 +156,16 @@
 				else {
 					document.getElementById("logo-text").innerHTML += _txt.charAt(i);
 					i++;
-					console.log(_txt.charAt(i));
 					setTimeout(_typeOut, _speed);
 				}
 			}
 		}
 
 		$(document).ready(function () {
-			console.log('ready');
 			$('#sixth').on('animationend webkitAnimationEnd oAnimationEnd', function (e) {
 
 				if (e.originalEvent.animationName == "rotate6") {
-					console.log('rotate6');
 					_typeOut();
-					console.log('end');
 				}
 			});
 		})
